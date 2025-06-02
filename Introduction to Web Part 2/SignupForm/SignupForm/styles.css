@@ -1,0 +1,45 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12;
+    font-weight: 120;
+    display: flexbox;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    padding-left: 315px;
+}
+
+.main-form {
+    padding-top: 20px;
+}
+
+.main-form {
+    padding-left: 20px;
+}
+
+.add-ress {
+    padding-left: 12px;
+    padding-right: 30px;
+}
+
+.type {
+    padding-left: 8px;
+}
+
+.mail {
+    padding-left: 21px;
+}
+
+.phone-number {
+    padding-left: 17px;
+}
+
+.select-location {
+    padding-left: 10px;
+}
+
+.buttons {
+    padding-left: 49px;
+}

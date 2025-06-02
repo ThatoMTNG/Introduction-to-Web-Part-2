@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Date</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+        <script>
+
+            function displayDate() {
+                document.getElementById("date").innerHTML = Date();
+                alert("This page was last updated: " + Date());
+            }
+
+        </script>
+
+    </head>
+    <body>
+
+        When was this website updated? 
+        <input type="date">
+        <br>
+
+       <button type="button" onclick="displayDate()">Send Update Date</button>
+       <p id="date"></p>
+        
+    </body>
+</html>

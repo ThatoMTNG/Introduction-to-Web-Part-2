@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-Up</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+
+        <script type="text/javascript">
+
+            try {
+                function validate()
+            {
+                var firstName = document.getElementById("firstName");
+                var lastName = document.getElementById("lastName");
+                var address = document.getElementById("address");
+                var male = document.getElementById("male");
+                var female = document.getElementById("female");
+                var email = document.getElementById("@");
+                var mobile = document.getElementById("mobile");
+                var location = document.getElementById("location");
+
+                if (firstName.value.trim() == "" || lastName.value.trim() == "" || address.value.trim() == "" ||
+                male.value.tim() == "" || female.value.tim() == "" || email.value.trim() == "" || mobile.value.trim() == ""
+                || location.value.trim() == "") 
+                {
+                    alert("Please fill in blanks");
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+
+                document.cookie = "First Name=firstName, Address=address, Monile=mobile; expires=Tue, 1-Nov-2022 00:00:00 UTC";
+                alert(document.cookie)
+            }
+
+            catch (err) {
+
+                alert("Error has occured: " + err.stack);
+            }
+            
+            finally {
+                alert("Execution completed")
+            }
+
+        </script>
+
+    </head>
+    <body>
+
+            <h1 align="center">Sign-up Form</h1>
+
+            <img src="q3.jfif" alt="Sunnyside Bowling Club" class="image" align="center">
+
+            <form name="myForm" onSubmit="return validate()" class="main-form">
+
+                <table class="main-table" align="center">
+
+                    <tr>
+                        <td class="first-name">First Name: <input type="textbox" id="firstName" name="fName" placeholder="First Name"></td>
+                    </tr> 
+                    <tr>
+                        <td class="last-name">Last Name: <input type="textbox" id="lastName" placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td class="add-ress">Address: <input type="textbox" id="address" placeholder="Address" class="add-ress"></td>
+                    </tr> 
+                    <tr>
+                        <td  class="type">Gender: <input type="radio" id="male"> Male <input type="radio" id="female"> Female</td>
+                    </tr> 
+                    <tr>
+                        <td class="mail">Email: <input type="email" id="@" name="message" placeholder="example@gmail.com"></td>
+                    </tr> 
+                    <tr>
+                        <td class="phone-number">Mobile: <input type="textbox" id="mobile" name="caller"></td>
+                    </tr>
+                    <tr>
+                        <td class="select-location">Location: 
+                            <select id="location" placeholder="select location">
+                                <option value="select">select location</option>
+                                <option value="boardwalk">Boardwalk</option>
+                                <option value="brooklyn">Brooklyn</option>
+                                <option value="lynnwood">Lynnwood</option>
+                                <option value="sunnyside">Sunnyside</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="buttons"><button type="submit" id="signup" class="send">Sign-up</button>
+                            <button type="reset" id="reset" class="restart">Reset</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+
+    </body>
+</html>
